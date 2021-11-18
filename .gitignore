@@ -1,0 +1,10 @@
+build/
+*.DS_Store
+.vscode/
+.vs/
+.idea/
+
+# Comment these out if you would like to keep your gen~ exports
+# under version control
+source/export/*
+!source/export/.gitkeep
