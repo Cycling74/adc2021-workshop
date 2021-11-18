@@ -193,12 +193,13 @@ void C74GenAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& 
 
 bool C74GenAudioProcessor::hasEditor() const
 {
-    return false;
+    return true;
 }
 
 AudioProcessorEditor* C74GenAudioProcessor::createEditor()
 {
-    return nullptr;
+    // return new C74GenAudioProcessorEditor(*this);
+    return new juce::GenericAudioProcessorEditor(*this);
 }
 
 void C74GenAudioProcessor::getStateInformation (MemoryBlock& destData)
