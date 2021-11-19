@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 104.0, 189.0, 992.0, 545.0 ],
+		"rect" : [ 593.0, 456.0, 1020.0, 680.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 90.000002682209015, 328.000009775161743, 68.0, 22.0 ],
+					"text" : "exportcode"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"attr" : "stereospread",
 					"id" : "obj-11",
@@ -126,7 +138,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 27.0, 391.0, 161.0, 47.0 ],
+					"patching_rect" : [ 27.0, 413.0, 161.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -150,7 +162,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.5, 456.0, 55.0, 55.0 ]
+					"patching_rect" : [ 26.5, 481.0, 55.0, 55.0 ]
 				}
 
 			}
@@ -513,7 +525,12 @@
  ]
 					}
 ,
-					"patching_rect" : [ 27.0, 339.0, 161.0, 22.0 ],
+					"patching_rect" : [ 27.0, 364.0, 161.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"exportfolder" : "Macintosh HD:/Users/isabelkaspriskie/Documents/Max 8/Packages/adc2021-workshop/source/export/",
+						"exportname" : "gen_export"
+					}
+,
 					"text" : "gen~ @title freeverb"
 				}
 
@@ -548,6 +565,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
